@@ -66,5 +66,5 @@ index.js:122 Greatest Decrease in Profits/Losses: Sep-2013 ($-1196225)
 
 
 Urls: 
-- Deployed GitHub Pages Url:
+- Deployed GitHub Pages Url: https://nickncb96.github.io/console-finances/
 - GitHub Repository Url: https://github.com/Nickncb96/console-finances.git
