@@ -103,4 +103,9 @@ console.log("Total: $" + netTotal);
 
 // Average Change Calculation
 var totalChange = 0;
-for (let i = 1; i < totalMonths; i++) {
+     for (let i = 1; i < totalMonths; i++) {
+       totalChange += finances[i][1] - finances[i - 1][1];
+     }
+     var averageChange = totalChange / (totalMonths - 1);
+     console.log("Average Change: $" + averageChange.toFixed(2));
+  
