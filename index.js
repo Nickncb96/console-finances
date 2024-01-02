@@ -103,9 +103,25 @@ console.log("Total: $" + netTotal);
 
 // Average Change Calculation
 var totalChange = 0;
-     for (let i = 1; i < totalMonths; i++) {
-       totalChange += finances[i][1] - finances[i - 1][1];
-     }
-     var averageChange = totalChange / (totalMonths - 1);
-     console.log("Average Change: $" + averageChange.toFixed(2));
-  
+for (let i = 1; i < totalMonths; i++) {
+  totalChange += finances[i][1] - finances[i - 1][1];
+}
+var averageChange = totalChange / (totalMonths - 1);
+console.log("Average Change: $" + averageChange.toFixed(2));
+
+// Greatest Increase/Decrease
+var maxIncrease = Math.max(...finances.map(record => record[1]));
+var maxDecrease = Math.min(...finances.map(record => record[1]));
+
+console.log(
+  "Greatest Increase in Profits/Losses:",
+  finances.find(record => record[1] === maxIncrease)[0],
+  "($" + maxIncrease + ")"
+);
+
+console.log(
+  "Greatest Decrease in Profits/Losses:",
+  finances.find(record => record[1] === maxDecrease)[0],
+  "($" + maxDecrease + ")"
+);
+
