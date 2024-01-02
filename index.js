@@ -91,3 +91,11 @@ var finances = [
 // Financial Analysis
 console.log("Financial Analysis");
 console.log("----------------");
+
+// Total Months Calculation
+var totalMonths = finances.length;
+console.log("Total Months:", totalMonths);
+
+// Net Total
+var netTotal = finances.reduce((total, record) => total + record[1], 0);
+console.log("Total: $" + netTotal);
