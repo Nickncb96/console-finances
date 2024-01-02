@@ -99,3 +99,8 @@ console.log("Total Months:", totalMonths);
 // Net Total
 var netTotal = finances.reduce((total, record) => total + record[1], 0);
 console.log("Total: $" + netTotal);
+
+
+// Average Change Calculation
+var totalChange = 0;
+for (let i = 1; i < totalMonths; i++) {
